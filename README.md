@@ -9,4 +9,3 @@ Book.io is a simple react application for basic crud operations
 - PostgreSql (on local)
 - Sequelize
 
-[app](/app.PNG)
