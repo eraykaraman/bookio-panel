@@ -33,7 +33,7 @@ const Books = () => {
         <Card
           key={book.id}
           style={{
-            width: "38em",
+            width: "18rem",
           }}
         >
           <Card.Body>
@@ -41,6 +41,7 @@ const Books = () => {
             <Card.Title>
               <h2 id="book-title">{book.title}</h2>
             </Card.Title>
+            <hr></hr>
             <Card.Text>{book.description}</Card.Text>
             <Card.Text>
               <b>{book.price} TL</b>
@@ -57,29 +58,6 @@ const Books = () => {
         </Card>
       ))}
     </div>
-
-    // <div className="container">
-    //   <h1>books.io</h1>
-    //   <div className="books">
-    //     {books.map((book) => (
-    //       <div className="book" key={book.id}>
-    //         {book.img && <img src={book.img} alt={book.title} />}
-    //         <h2>{book.title}</h2>
-    //         <p>{book.description}</p>
-    //         <b>{book.price}</b>
-    //         <button className="delete" onClick={() => handleDelete(book.id)}>
-    //           Delete
-    //         </button>
-    //         <button className="update">
-    //           <Link to={`/update/${book.id}`}>Update</Link>
-    //         </button>
-    //       </div>
-    //     ))}
-    //   </div>
-    //   <button>
-    //     <Link to="/add">Add new book</Link>
-    //   </button>
-    // </div>
   );
 };
 
